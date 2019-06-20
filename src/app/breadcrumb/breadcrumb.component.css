@@ -1,0 +1,12 @@
+:host {
+  text-align: left;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: #003c69;
+}
+
+.container ul li {
+  display: inline;
+}

@@ -1,0 +1,6 @@
+<div>
+  <p class="title">John Smith</p>
+  <div class="cards">
+    <app-detailscard *ngFor="let itemKey of itemKeys" [title]="itemKey" [items]="itemList[itemKey]"></app-detailscard>
+  </div>
+</div>

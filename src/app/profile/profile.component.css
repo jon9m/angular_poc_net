@@ -1,0 +1,14 @@
+:host {
+  margin-left: 40px;
+}
+
+.title {
+  font-size: 140%;
+  color: #003c69;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+}
