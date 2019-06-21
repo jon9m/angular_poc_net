@@ -16,8 +16,8 @@ export class ProfileComponent implements OnInit {
     this.itemList = {
       'Address': [
         {
-          path: 'recidential',
-          description: 'Recidential'
+          path: 'residential',
+          description: 'Residential'
         },
         {
           path: 'pobox',

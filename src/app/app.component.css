@@ -1,4 +1,4 @@
-body {
+:host {
   font-family: Verdana, Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
@@ -6,4 +6,10 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.title {
+  margin-left: 40px;
+  font-size: 140%;
+  color: #003c69;
 }

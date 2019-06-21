@@ -1,6 +1,5 @@
 <div>
-  <p class="title">John Smith</p>
   <div class="cards">
-    <app-detailscard *ngFor="let itemKey of itemKeys" [title]="itemKey" [items]="itemList[itemKey]"></app-detailscard>
+    <app-carditem *ngFor="let itemKey of itemKeys" [title]="itemKey" [items]="itemList[itemKey]"></app-carditem>
   </div>
 </div>

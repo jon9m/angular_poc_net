@@ -10,3 +10,9 @@
 .container ul li {
   display: inline;
 }
+
+.container ul li a.inactivelink {
+  pointer-events: none;
+  cursor: default;
+  color: grey;
+}

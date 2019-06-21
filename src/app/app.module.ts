@@ -5,20 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { ProfileComponent } from './profile/profile.component';
-import { DetailscardComponent } from './detailscard/detailscard.component';
-import { ResidentialComponent } from './residential/residential.component';
+import { CardItemsComponent } from './carditems/carditems.component';
+import { ResidentialComponent } from './carditemdetails/residential/residential.component';
+import { StoreModule } from '@ngrx/store';
+import { appReducer } from './app-reducer';
 
 @NgModule({
   declarations: [
     AppComponent,
     BreadcrumbComponent,
     ProfileComponent,
-    DetailscardComponent,
+    CardItemsComponent,
     ResidentialComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({ appState: appReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]

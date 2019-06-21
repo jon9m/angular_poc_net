@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Item } from '../model/item.model';
+import { Item } from 'src/app/model/item.model';
 
 @Component({
-  selector: 'app-breadcrumb',
-  templateUrl: './breadcrumb.component.html',
-  styleUrls: ['./breadcrumb.component.css']
+  selector: 'app-residential',
+  templateUrl: './residential.component.html',
+  styleUrls: ['./residential.component.css']
 })
-export class BreadcrumbComponent implements OnInit {
-
+export class ResidentialComponent implements OnInit {
   constructor(private appstore: Store<{ appState: { item: Item, items: Item[], title: string } }>) { }
 
-  currTitle;
+  title = '';
+  items = [];
 
   ngOnInit() {
     this.appstore.select('appState').subscribe((val) => {
-      this.currTitle = val.title;
+      this.title = val.title;
+      this.items = val.items;
     }, err => {
       console.log(err);
     });
