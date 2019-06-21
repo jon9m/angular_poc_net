@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { setPathHome } from '../utils/utils';
+import { Item } from '../model/item.model';
 
 @Component({
   selector: 'app-profile',
@@ -10,9 +13,11 @@ export class ProfileComponent implements OnInit {
   itemList: Object;
   itemKeys: string[];
 
-  constructor() { }
+  constructor(private appstore: Store<{ appState: { item: Item, items: Item[], title: string } }>) { }
 
   ngOnInit() {
+    setPathHome(this.appstore);
+
     this.itemList = {
       'Address': [
         {
@@ -64,7 +69,7 @@ export class ProfileComponent implements OnInit {
       ],
       'Licenses': [
         {
-          path: 'licence',
+          path: 'carlicence',
           description: 'Car'
         },
         {
@@ -78,7 +83,7 @@ export class ProfileComponent implements OnInit {
       ],
       'Registrations': [
         {
-          path: 'registrations',
+          path: 'carregistration',
           description: 'Car'
         },
         {

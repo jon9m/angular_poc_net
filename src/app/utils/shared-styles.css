@@ -1,0 +1,47 @@
+:host {
+  margin-left: 40px;
+}
+
+.twocols {
+  display: flex;
+}
+
+.twocolform {
+  display: flex;
+}
+
+.col {
+  margin: 0 20px;
+}
+
+.col div {
+  margin-bottom: 5px;
+}
+
+.col input[type=text] {
+  margin-bottom: 10px;
+  height: 30px;
+  width: 200px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons span {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.buttons .save {
+  width: 60%;
+  background-color: #78ba00;
+}
+
+.buttons .cancel {
+  cursor: pointer;
+  margin-right: 10px;
+  width: 40%;
+  background-color: #d6e1ee;
+}

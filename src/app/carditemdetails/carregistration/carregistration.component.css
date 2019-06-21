@@ -1,0 +1,21 @@
+@import '../../utils/shared-styles.css';
+.col div {
+  padding-bottom: 10px;
+}
+
+.col div.buttons span {
+  margin-right: 10px;
+  color: white;
+}
+
+.renew {
+  background-color: #78ba00;
+}
+
+.sell {
+  background-color: #007eb1;
+}
+
+.logbook {
+  background-color: #0b2e4c;
+}

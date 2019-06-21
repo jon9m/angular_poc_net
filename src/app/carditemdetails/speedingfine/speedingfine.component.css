@@ -1,0 +1,10 @@
+@import '../../utils/shared-styles.css';
+
+.col div {
+  padding-bottom: 10px;
+}
+
+.col div.buttons span {
+  margin-right: 10px;
+  color: white;
+}

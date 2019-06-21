@@ -6,11 +6,12 @@ import { DESELECT_CARD } from 'src/app/app.actions';
 import { goBack } from 'src/app/utils/utils';
 
 @Component({
-  selector: 'app-residential',
-  templateUrl: './residential.component.html',
-  styleUrls: ['./residential.component.css']
+  selector: 'app-contactdetails',
+  templateUrl: './contactdetails.component.html',
+  styleUrls: ['./contactdetails.component.css']
 })
-export class ResidentialComponent implements OnInit {
+export class ContactdetailsComponent implements OnInit {
+
   constructor(private router: Router, private appstore: Store<{ appState: { item: Item, items: Item[], title: string } }>) { }
 
   title = '';

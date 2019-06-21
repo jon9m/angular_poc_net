@@ -9,6 +9,10 @@ import { CardItemsComponent } from './carditems/carditems.component';
 import { ResidentialComponent } from './carditemdetails/residential/residential.component';
 import { StoreModule } from '@ngrx/store';
 import { appReducer } from './app-reducer';
+import { ContactdetailsComponent } from './carditemdetails/contactdetails/contactdetails.component';
+import { CarlicenseComponent } from './carditemdetails/carlicense/carlicense.component';
+import { CarregistrationComponent } from './carditemdetails/carregistration/carregistration.component';
+import { SpeedingfineComponent } from './carditemdetails/speedingfine/speedingfine.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { appReducer } from './app-reducer';
     BreadcrumbComponent,
     ProfileComponent,
     CardItemsComponent,
-    ResidentialComponent
+    ResidentialComponent,
+    ContactdetailsComponent,
+    CarlicenseComponent,
+    CarregistrationComponent,
+    SpeedingfineComponent
   ],
   imports: [
     BrowserModule,

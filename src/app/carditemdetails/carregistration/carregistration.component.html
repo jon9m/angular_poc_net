@@ -1,0 +1,44 @@
+<div class="twocols">
+  <app-carditem [title]="title" [items]="items"></app-carditem>
+  <div class="twocolform">
+    <div class="col">
+      <div>Car Registrations</div>
+      <div>1962 Ferrari GTO</div>
+      <div class="twocolform">
+        <div class="col">
+          <div>
+            <span>Rego No.</span>
+          </div>
+          <div>
+            <span>Expiry</span>
+          </div>
+          <div>
+            <span>Color</span>
+          </div>
+          <div>
+            <span>Chassis/VIN</span>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <span>BL 250</span>
+          </div>
+          <div>
+            <span>01.01.2020</span>
+          </div>
+          <div>
+            <span>Red</span>
+          </div>
+          <div>
+            <span>3987GT</span>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <span class="renew" (click)="onCancel()">RENEW</span>
+        <span class="sell">SELL</span>
+        <span class="logbook">LOGBOOK</span>
+      </div>
+    </div>
+  </div>
+</div>
