@@ -37,6 +37,7 @@
 }
 
 .buttons .save {
+  cursor: pointer;
   width: 60%;
   background-color: #78ba00;
 }

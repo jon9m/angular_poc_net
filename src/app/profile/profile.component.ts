@@ -87,11 +87,11 @@ export class ProfileComponent implements OnInit {
           description: 'Car'
         },
         {
-          path: 'registrations',
+          path: 'registrations2',
           description: 'Boat'
         },
         {
-          path: 'registrations',
+          path: 'registrations3',
           description: 'Helicopter'
         }
       ],
@@ -101,11 +101,11 @@ export class ProfileComponent implements OnInit {
           description: 'Speeding fine'
         },
         {
-          path: 'infringements',
+          path: 'infringements2',
           description: 'Speeding fine 2'
         },
         {
-          path: 'infringements',
+          path: 'infringements3',
           description: 'Speeding fine 3'
         }
       ],
@@ -115,11 +115,11 @@ export class ProfileComponent implements OnInit {
           description: 'Product x'
         },
         {
-          path: 'otherproducts',
+          path: 'otherproducts2',
           description: 'Product B'
         },
         {
-          path: 'otherproducts',
+          path: 'otherproducts3',
           description: 'Product P'
         }
       ]

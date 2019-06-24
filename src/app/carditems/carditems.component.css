@@ -34,6 +34,10 @@
   word-wrap: break-word;
 }
 
+.active {
+  font-weight: bold;
+}
+
 @media all and (max-width: 800px) {
   :host {
     width: 40%;
