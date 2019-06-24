@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { goBack } from 'src/app/utils/utils';
-import { Item } from 'src/app/model/item.model';
+import { Item } from '../../model/item.model';
+import { goBack } from '../../utils/utils';
 
 @Component({
   selector: 'app-carlicense',
@@ -14,9 +14,11 @@ export class CarlicenseComponent implements OnInit {
 
   title = '';
   items = [];
+  licenseImgPath;
 
   ngOnInit() {
     this.appstore.select('appState').subscribe((val) => {
+      this.licenseImgPath = './assets/licence.png';
       this.title = val.title;
       this.items = val.items;
     }, err => {

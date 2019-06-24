@@ -1,5 +1,4 @@
 @import '../../utils/shared-styles.css';
-
 .col div {
   padding-bottom: 10px;
 }
@@ -7,4 +6,24 @@
 .col div.buttons span {
   margin-right: 10px;
   color: white;
+}
+
+.title {
+  font-weight: bold;
+  color: #003c69;
+}
+
+.colvalues span {
+  font-weight: bold;
+}
+
+.colvalues span.warning {
+  font-weight: bold;
+  color: red;
+}
+
+.greybg {
+  padding: 5px;
+  background-color: #f4f7fa;
+  align-self: flex-start;
 }

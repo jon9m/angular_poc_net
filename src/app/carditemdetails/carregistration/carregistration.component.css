@@ -6,6 +6,7 @@
 .col div.buttons span {
   margin-right: 10px;
   color: white;
+  cursor: pointer;
 }
 
 .renew {
@@ -18,4 +19,9 @@
 
 .logbook {
   background-color: #0b2e4c;
+}
+
+.title {
+  font-weight: bold;
+  color: #003c69;
 }

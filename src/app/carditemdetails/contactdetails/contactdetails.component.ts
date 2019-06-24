@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Item } from 'src/app/model/item.model';
 import { Router } from '@angular/router';
-import { DESELECT_CARD } from 'src/app/app.actions';
-import { goBack } from 'src/app/utils/utils';
+import { Item } from '../../model/item.model';
+import { goBack } from '../../utils/utils';
 
 @Component({
   selector: 'app-contactdetails',
